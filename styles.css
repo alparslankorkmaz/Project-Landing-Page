@@ -138,7 +138,6 @@ body {
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
-    padding: 0 14em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -149,10 +148,11 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-top: 15px;
+    padding: 1em 14em;
 }
 
 .headerlinks {
-    width: 50%;
+    width: 30%;
     display: flex;
     justify-content: space-around;
 }
@@ -160,18 +160,24 @@ header {
 .headerlinks a {
     color: #e5e7ebe3;
     text-decoration: none;
+    transition: all 0.25s;
 }
 
+.headerlinks a:hover {
+    transform: translateY(-0.15em);
+}
 .logo {
     color: #F9FAF8;
     font-size: 24px;
     font-weight: 700;
+    letter-spacing: 0.3em;
 }
 
 h1 {
     font-weight: 900;
     font-size: 36px;
     color: #F9FAF8;
+    margin-right: 1em;
 }
 
 .content1 {
@@ -179,6 +185,7 @@ h1 {
     align-items: center;
     justify-content: space-between;
     margin: 100px 0px;
+    padding: 0 14em;
 }
 
 
@@ -186,6 +193,7 @@ h1 {
     color: #e5e7ebcb;
     font-size: 18px;
     margin: 1em 2em 1em 0;
+    line-height: 1.5em;
 }
 
 .btn1 {
@@ -212,5 +220,50 @@ h1 {
 }
 
 .content2 {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     background-color: white;
+}
+h2 {
+    font-weight: 900;
+    font-size: 36px;
+    color: #1F2937;
+    margin: 1.5em;
+}
+
+.cardcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+    margin-bottom: 5em;
+    padding-bottom: 2em;
+    transition: all 0.25s;
+}
+
+.card:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.cardimg {
+    object-fit: cover;
+    height: 10em;
+    width: 10em;
+    margin: 1em;
+    border: #3881f6 solid 0.3em;
+    border-radius: 0.5em;
+}
+
+.cardtext {
+    text-align: center;
+    padding: 0 2em;
 }
